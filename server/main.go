@@ -125,8 +125,8 @@ func main() {
 	apiGroup.GET("/stats", statsController.Stats)
 	apiGroup.GET("/stats/monthly", statsController.StatsMonthly)
 	// Address
-	apiGroup.GET("/monkey/:address", monkeyController.GetBanano)
-	apiGroup.POST("/monkey/dtl", monkeyController.MonkeyStats)
+	apiGroup.GET("/pilou/:address", monkeyController.GetBanano)
+	apiGroup.POST("/pilou/dtl", monkeyController.MonkeyStats)
 	// Testing
 	if gin.IsDebugging() {
 		apiGroup.GET("/random", monkeyController.GetRandomSvg)
