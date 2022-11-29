@@ -25,7 +25,7 @@ type MonkeyController struct {
 // Return monKey for given address
 func (mc MonkeyController) GetBanano(c *gin.Context) {
 	address := c.Param("address")
-
+	address = strings.Replace(address, "xdg", "ban", 1)
 	valid := utils.ValidateAddress(address)
 	if !valid {
 		c.String(http.StatusBadRequest, "Invalid address")
