@@ -1,6 +1,6 @@
 # Pilou
 
-This is the source code the [MonKey](https://monkey.banano.cc/), the graphical representation of [DogeNano](https://dogenano.io) addresses.
+This is the source code the Doggycons, the graphical representation of [DogeNano](https://dogenano.io) addresses.
 
 ## Frontend
 
